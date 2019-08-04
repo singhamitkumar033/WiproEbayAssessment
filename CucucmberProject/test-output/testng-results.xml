@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Loaded the Properties files]]>
+    </line>
+    <line>
+      <![CDATA[Loaded the Properties files]]>
+    </line>
+    <line>
+      <![CDATA[Entered Username]]>
+    </line>
+    <line>
+      <![CDATA[Entered password]]>
+    </line>
+    <line>
+      <![CDATA[click on SignIn button]]>
+    </line>
+    <line>
+      <![CDATA[driver title sumitsingh21 – @sumitsingh21 | WordPress.org]]>
+    </line>
+    <line>
+      <![CDATA[Successfully Checked the Home Page]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="19779" started-at="2019-06-28T09:02:53Z" finished-at="2019-06-28T09:03:12Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:RunnerClass.RunCucumberTest@2d928643]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="19779" started-at="2019-06-28T09:02:53Z" finished-at="2019-06-28T09:03:12Z">
+      <class name="RunnerClass.RunCucumberTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:RunnerClass.RunCucumberTest@2d928643]" name="setUpClass" is-config="true" duration-ms="172" started-at="2019-06-28T09:02:53Z" finished-at="2019-06-28T09:02:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:RunnerClass.RunCucumberTest@2d928643]" name="runScenario" duration-ms="19465" started-at="2019-06-28T09:02:53Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-06-28T09:03:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Title of your scenario"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["check WordPress Login Functinality with Different User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Loaded the Properties files]]>
+            </line>
+            <line>
+              <![CDATA[Loaded the Properties files]]>
+            </line>
+            <line>
+              <![CDATA[Entered Username]]>
+            </line>
+            <line>
+              <![CDATA[Entered password]]>
+            </line>
+            <line>
+              <![CDATA[click on SignIn button]]>
+            </line>
+            <line>
+              <![CDATA[driver title sumitsingh21 – @sumitsingh21 | WordPress.org]]>
+            </line>
+            <line>
+              <![CDATA[Successfully Checked the Home Page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:RunnerClass.RunCucumberTest@2d928643]" name="tearDownClass" is-config="true" duration-ms="59" started-at="2019-06-28T09:03:12Z" finished-at="2019-06-28T09:03:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- RunnerClass.RunCucumberTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

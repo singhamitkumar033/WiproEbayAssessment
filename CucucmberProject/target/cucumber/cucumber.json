@@ -1,0 +1,191 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "To close the browser",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1118291,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User Closed the Browser Always",
+            "match": {
+              "location": "LoginStepDefinition.closeTheBrowser()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-06-23T08:54:54.469Z",
+        "line": 13,
+        "name": "Title of your scenario",
+        "description": "",
+        "id": "check-wordpress-login-functinality-with-different-user;title-of-your-scenario;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 130720630,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDefinition.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10130471457,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "navigate to wordpress page",
+            "match": {
+              "location": "LoginStepDefinition.navigate()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4352758865,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user logged in using username as \"sumitsingh21\" and password as \"demo@5318\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sumitsingh21",
+                  "offset": 34
+                },
+                {
+                  "val": "demo@5318",
+                  "offset": 65
+                }
+              ],
+              "location": "LoginStepDefinition.login(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12474859,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "home page should be displayed",
+            "match": {
+              "location": "LoginStepDefinition.verifySuccessful()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "To close the browser",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 271359,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User Closed the Browser Always",
+            "match": {
+              "location": "LoginStepDefinition.closeTheBrowser()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-06-23T08:55:09.102Z",
+        "line": 14,
+        "name": "Title of your scenario",
+        "description": "",
+        "id": "check-wordpress-login-functinality-with-different-user;title-of-your-scenario;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 106473205,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDefinition.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6355881633,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "navigate to wordpress page",
+            "match": {
+              "location": "LoginStepDefinition.navigate()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4415812837,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user logged in using username as \"sumitsingh23\" and password as \"demo@142dj3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sumitsingh23",
+                  "offset": 34
+                },
+                {
+                  "val": "demo@142dj3",
+                  "offset": 65
+                }
+              ],
+              "location": "LoginStepDefinition.login(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5218125,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "home page should be displayed",
+            "match": {
+              "location": "LoginStepDefinition.verifySuccessful()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "check WordPress Login Functinality with Different User",
+    "description": "Description: The purpose of this feature is to test the Background keyword",
+    "id": "check-wordpress-login-functinality-with-different-user",
+    "keyword": "Feature",
+    "uri": "file:Features/sample.feature",
+    "tags": []
+  }
+]
