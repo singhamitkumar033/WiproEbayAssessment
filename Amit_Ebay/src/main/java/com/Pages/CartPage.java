@@ -15,7 +15,7 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
  *         Locator, Because of the error produces while getting screenshot of
  *         page using uiautomatorviewer and also used Appium but didn't get the
  *         Cart Page Detail
- *         @date : 08/04/2019
+ * @date : 08/04/2019
  */
 public class CartPage {
 	public CartPage(AndroidDriver<MobileElement> driver) {
@@ -32,7 +32,7 @@ public class CartPage {
 	/**
 	 * @author Amit.Singh Description: Created Getter of all the WebElements to get
 	 *         the Element using getter for dataRestriction purpose
-	 *         @date : 08/04/2019
+	 * @date : 08/04/2019
 	 */
 	public WebElement getCartPageHeader() {
 		return cartPageHeader;
@@ -46,13 +46,21 @@ public class CartPage {
 		return ProdcutsDescription;
 	}
 
+	/**
+	 * @author Amit.Singh
+	 * @description: This method is used to check whether Cart Page is displaying or not
+	 * @date : 08/09/2019
+	 */
 	public void verifyCartPageIsDisplaying() {
 		getCartPageHeader().isDisplayed();
 		Reporter.log("Cart Page is Displayed");
 	}
 
 	/**
-	 * @author Amit.Singh Description: Have Used Assert to check the TV detail
+	 * @author Amit.Singh
+	 * @description: This method is used to verify the product detail on the Cart
+	 *               Page which included TV price and description
+	 * @date : 08/09/2019
 	 */
 	public void verifyTheproductDetail() {
 		int TVPriceonOnCart = Integer.parseInt(getProductsPrice().getText());

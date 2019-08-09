@@ -12,7 +12,7 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 /**
  * @author Amit.Singh Description : HomePage Java Class to include the Page
  *         Repository and method related to HomePage
- *         @date : 08/04/2019
+ * @date : 08/04/2019
  */
 public class HomePage {
 
@@ -63,41 +63,83 @@ public class HomePage {
 		return addTocartBtn;
 	}
 
+	/**
+	 * @author Amit.Singh
+	 * @Description : This method is used to check display of SignIn Button and then
+	 *              click on SignIn Button
+	 * @date : 08/09/2019
+	 */
 	public void clickOnSignInBtn() {
 		getSignInButton().isDisplayed();
 		getSignInButton().click();
 	}
 
+	/**
+	 * @author Amit.Singh
+	 * @Description : This method is used to verify presence of Home Page
+	 * @date : 08/09/2019
+	 */
 	public void verifyHomeIsDisplayed() {
 		getSearchBox().isDisplayed();
 		Reporter.log("Home is Successfully Loaded");
 	}
 
+	/**
+	 * @author Amit.Singh
+	 * @Description : This method is for entering the search detail in the search
+	 *              Box
+	 * @date : 08/09/2019
+	 */
 	public void enterSearchDetail(String searchDetail) {
 		getSearchBox().isDisplayed();
 		getSearchBox().sendKeys(searchDetail);
 		Reporter.log("Entered the Search Detail");
 	}
 
+	/**
+	 * @author Amit.Singh
+	 * @Description : This method is used to select the TV list details from the
+	 *              suggestion displayed
+	 * @date : 08/09/2019
+	 */
 	public void selectTVFromList() {
 		searchBoxResults.get(1).isDisplayed();
 		searchBoxResults.get(1).click();
 		Reporter.log("Clicked on 2nd Tv results Sugession", true);
 	}
 
+	/**
+	 * @author Amit.Singh
+	 * @Description : This method is for verifying the pop-up presence and then
+	 *              click on the same
+	 * @date : 08/09/2019
+	 */
 	public void clickOnSaVePopUp() {
 		getSaveSearchPopUp().isDisplayed();
 		getSaveSearchPopUp().click();
 	}
 
+	/**
+	 * @author Amit.Singh
+	 * @Description : This method is for selecting the second Tv from the results
+	 *              displayed click on the same
+	 * @date : 08/09/2019
+	 */
 	public void selectSecondTvFromSearchResults() {
-		getSearchBoxResults().get(0).isDisplayed();
-		getSearchBoxResults().get(0).click();
+		getSearchBoxResults().get(1).isDisplayed();
+		getSearchBoxResults().get(1).click();
 	}
 
 	public static int TVprice;
 	public static String TVdescription;
 
+	/**
+	 * @author Amit.Singh
+	 * @Description : This method is for storing the TC price an description in
+	 *              static variable so we can use these to verify it on the cart
+	 *              page
+	 * @date : 08/09/2019
+	 */
 	public void getAllTheProductDetail() {
 		getTvResultPrices().get(1).isDisplayed();
 		TVprice = Integer.parseInt(getTvResultPrices().get(1).getText());
@@ -106,6 +148,12 @@ public class HomePage {
 				+ TVprice);
 	}
 
+	/**
+	 * @author Amit.Singh
+	 * @Description : This method is for verifying presence of the Cart Button and
+	 *              then adding the product to cart page
+	 * @date : 08/09/2019
+	 */
 	public void clickOnAddToCardButton() {
 		getAddTocartBtn().isDisplayed();
 		getAddTocartBtn().click();

@@ -2,28 +2,15 @@ package com.generic;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.ServerSocket;
 import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Reporter;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-
-import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.remote.MobilePlatform;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
@@ -38,6 +25,13 @@ public class Base {
 		return service;
 	}
 
+	/**
+	 * @author Amit.Singh
+	 * @description: Constructor of Base Class which is used to load the properties
+	 *               file
+	 * 
+	 * @date : 08/09/2019
+	 */
 	public Base() {
 		try {
 			prop = new Properties();
@@ -50,6 +44,15 @@ public class Base {
 		}
 	}
 
+	/**
+	 * @author Amit.Singh
+	 * @description: This method is used to Initialise the AndroidDriver with the
+	 *               desired capability as PLATFORM_NAME, UDID, DeviceName,
+	 *               NEW_COMMAND_TIMEOUT and version and app (to define the apk file
+	 *               location)
+	 * 
+	 * @date : 08/09/2019
+	 */
 	public static void Initialise() throws IOException, InterruptedException {
 		FileInputStream fis = new FileInputStream(
 				System.getProperty("user.dir") + "\\Resources\\Application.properties");

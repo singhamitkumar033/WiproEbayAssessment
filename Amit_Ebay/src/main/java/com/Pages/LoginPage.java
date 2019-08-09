@@ -42,12 +42,26 @@ public class LoginPage {
 		return error_Msg;
 	}
 
+	/**
+	 * @author Amit.Singh
+	 * @Description : This method is verifying the username text-box presence and
+	 *              then entering the username
+	 * @param Username which is used to enter in the UserName textBox
+	 * @date : 08/09/2019
+	 */
 	public void enterUserName(String un) {
 		getuN_txt_bx().isDisplayed();
 		getuN_txt_bx().sendKeys(un);
 		Reporter.log("Entered Username", true);
 	}
 
+	/**
+	 * @author Amit.Singh
+	 * @Description : This method is verifying the password text-box presence and
+	 *              then entering the password
+	 * @param password which is used to enter in the password textBox
+	 * @date : 08/09/2019
+	 */
 	public void enterpassword(String pwd) {
 		try {
 			getuN_txt_bx().isDisplayed();
@@ -58,6 +72,12 @@ public class LoginPage {
 		}
 	}
 
+	/**
+	 * @author Amit.Singh
+	 * @Description : This method is used for clicking on the signIn Button on the
+	 *              SignInPage
+	 * @date : 08/09/2019
+	 */
 	public void clickOnSignIn() {
 		getSubmit_btn().click();
 		Reporter.log("click on SignIn button", true);
